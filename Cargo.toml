@@ -1,0 +1,13 @@
+[package]
+name = "memgen"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vast = "0.3.0"
+calyx = {git = "https://github.com/cucapra/calyx.git", package = "calyx"}
+clap = {version = "3.2.5", features = ["derive"]}
+strum = {version = "0.24.1", features = ["derive"]}
+strum_macros = "0.24.0"
