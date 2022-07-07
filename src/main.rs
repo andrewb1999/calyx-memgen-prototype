@@ -29,7 +29,7 @@ fn main() -> io::Result<()> {
     let args = Args::parse();
     let memory = construct_memory(args);
     let prim = memory.create_calyx_primitive();
-    let module = memory.create_sv_module();
+    let module = memory.create_verilog_module();
     Printer::write_primitive(&prim, 0, &mut io::stdout())?;
     println!();
     println!("{}", module);
